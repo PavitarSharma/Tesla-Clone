@@ -71,6 +71,12 @@ const Container = styled.div`
 `
 
 const Logo = styled.div`
+   img {
+    @media (max-width: 390px) {
+      width: 80px;
+    }
+  }
+
 
 `
 
@@ -107,6 +113,11 @@ const RightMenu = styled.div`
      margin: 0 10px;
      text-transform: uppercase;
 
+     @media (max-width: 390px) {
+       font-size: 16px;
+       margin: 0 6px;
+     }
+
 
      &:hover {
         color: #555;
@@ -119,6 +130,11 @@ const Icon = styled(MenuIcon)`
   font-size: 30px !important;
   cursor: pointer;
   margin-left: 10px;
+
+  @media (max-width: 390px) {
+    font-size: 30px !important;
+    margin-right: 16px;
+  }
 `
 
 const BurgerNav = styled.div`
