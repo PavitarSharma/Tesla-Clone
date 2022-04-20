@@ -50,6 +50,8 @@ const Header = () => {
         <li><a href="#home">Power</a></li>
         <li><a href="#home">Utilities</a></li>
         <li><a href="#home">Test Drive</a></li>
+        <li><a href="#home">Shop</a></li>
+        <li><a href="#home">Tesla Account</a></li>
       </BurgerNav>
     </Container>
   )
@@ -72,8 +74,12 @@ const Container = styled.div`
 
 const Logo = styled.div`
    img {
-    @media (max-width: 390px) {
+    @media (max-width: 428px) {
       width: 80px;
+    }
+
+    @media (max-width: 328px) {
+      width: 60px;
     }
   }
 
@@ -113,15 +119,20 @@ const RightMenu = styled.div`
      margin: 0 10px;
      text-transform: uppercase;
 
-     @media (max-width: 390px) {
+     @media (max-width: 428px) {
        font-size: 16px;
        margin: 0 6px;
      }
 
 
+
      &:hover {
         color: #555;
       }
+
+      @media (max-width: 328px) {
+       display: none;
+     }
    }
 
 `
@@ -131,9 +142,14 @@ const Icon = styled(MenuIcon)`
   cursor: pointer;
   margin-left: 10px;
 
-  @media (max-width: 390px) {
+  @media (max-width: 428px) {
     font-size: 30px !important;
     margin-right: 16px;
+  }
+
+  @media (max-width: 328px) {
+    font-size: 30px !important;
+    margin-right: 2px;
   }
 `
 
@@ -161,7 +177,16 @@ const BurgerNav = styled.div`
       font-weight: bold;
       cursor: pointer;
       width: 100%;
+
+      @media (max-width: 328px) {
+        font-size: 14px;
+        padding: 0 12px;
+      }
     }
+
+      @media (max-width: 328px) {
+        scroll-behavior: scroll;
+      }
   }
 `
 
