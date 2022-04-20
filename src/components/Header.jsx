@@ -125,7 +125,6 @@ const RightMenu = styled.div`
      }
 
 
-
      &:hover {
         color: #555;
       }
