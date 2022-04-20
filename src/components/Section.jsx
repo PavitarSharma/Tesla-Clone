@@ -51,7 +51,17 @@ const ItemText = styled.div`
 
     h1 {
         font-size: 34px;
+        @media (max-width: 328px) {
+            font-size: 24px;
+            
+        }
+        
     }
+
+    @media screen and (max-width: 328px) {
+            font-size: 14px;
+            
+        }
 `
 
 const Buttons = styled.div`
@@ -70,6 +80,7 @@ const ButtonGroup = styled.div`
         flex-direction: column;
         gap: 10px;
     }
+
 `
 
 const LeftButton = styled.button`
@@ -85,6 +96,11 @@ const LeftButton = styled.button`
     text-transform: uppercase;
     border: none;
     outline: none;
+    @media (max-width: 328px) {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
 `
 
 const RightButton = styled.button`
@@ -100,6 +116,13 @@ const RightButton = styled.button`
     text-transform: uppercase;
     border: none;
     outline: none;
+
+    @media (max-width: 328px) {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+            
+    }
 `
 
 const DownArrow = styled.img`

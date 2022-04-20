@@ -78,7 +78,7 @@ const Logo = styled.div`
       width: 80px;
     }
 
-    @media (max-width: 328px) {
+    @media (max-width: 368px) {
       width: 60px;
     }
   }

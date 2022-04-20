@@ -65,6 +65,11 @@ const Home = () => {
 
 const Container = styled.div`
     height: 100vh;
+
+    @media (max-width: 328px) {
+        scroll-behavior: none;
+        overflow-x: hidden;
+    }
 `
 
 export default Home
